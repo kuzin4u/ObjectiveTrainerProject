@@ -7,6 +7,7 @@
 //
 
 #import "StatsViewController.h"
+#import "SWRevealViewController.h"
 
 @interface StatsViewController ()
 
@@ -17,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
+     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

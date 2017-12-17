@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Prefix.pch"
 
 @interface MenuModel : NSObject
+- (NSArray *) getMenuItems;
 
 @end

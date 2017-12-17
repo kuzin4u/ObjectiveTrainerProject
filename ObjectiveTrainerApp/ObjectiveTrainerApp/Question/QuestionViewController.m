@@ -7,6 +7,7 @@
 //
 
 #import "QuestionViewController.h"
+#import "SWRevealViewController.h"
 
 @interface QuestionViewController ()
 
@@ -14,9 +15,15 @@
 
 @implementation QuestionViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    /*  https://www.appcoda.com/ios-programming-sidebar-navigation-menu/(Eng)-(Rus)https://habrahabr.ru/post/255209/ - How To Add a Slide-out Sidebar Menu in Your Apps - Панель бокового меню в свое iOS-приложение
+     On Storyboard: through Segue connection between RevealViewController and QuestionViewController  MenuViewController must choosen - "Reveal view controller set controller"   */
+     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+// https://arm1.ru/blog/poleznaya-shtuka-prefix-pch  - Prefix.pch
 }
 
 - (void)didReceiveMemoryWarning {

@@ -12,7 +12,6 @@
 		AB2244D41FE0A88E006FAE95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2244D31FE0A88E006FAE95 /* Assets.xcassets */; };
 		AB2244D71FE0A88E006FAE95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2244D51FE0A88E006FAE95 /* LaunchScreen.storyboard */; };
 		AB2244DA1FE0A88E006FAE95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2244D91FE0A88E006FAE95 /* main.m */; };
-		AB2244E91FE0AAAC006FAE95 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2244E81FE0AAAC006FAE95 /* SWRevealViewController.m */; };
 		AB2244EC1FE0AB48006FAE95 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2244EB1FE0AB48006FAE95 /* QuestionViewController.m */; };
 		AB2244EF1FE0AB86006FAE95 /* QuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2244EE1FE0AB86006FAE95 /* QuestionModel.m */; };
 		AB2244F21FE0ABD0006FAE95 /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2244F11FE0ABD0006FAE95 /* MenuModel.m */; };
@@ -21,6 +20,8 @@
 		AB2244FB1FE0AC95006FAE95 /* RemoveAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2244FA1FE0AC95006FAE95 /* RemoveAdsViewController.m */; };
 		AB2244FE1FE0ACBB006FAE95 /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2244FD1FE0ACBB006FAE95 /* StatsViewController.m */; };
 		AB2245011FE0ACF5006FAE95 /* StatsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2245001FE0ACF5006FAE95 /* StatsModel.m */; };
+		AB2245161FE2BA24006FAE95 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2245151FE2BA24006FAE95 /* SWRevealViewController.m */; };
+		AB2245191FE32F54006FAE95 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2245181FE32F54006FAE95 /* MenuItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +33,6 @@
 		AB2244D61FE0A88E006FAE95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB2244D81FE0A88E006FAE95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB2244D91FE0A88E006FAE95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AB2244E71FE0AAAC006FAE95 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		AB2244E81FE0AAAC006FAE95 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		AB2244EA1FE0AB48006FAE95 /* QuestionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		AB2244EB1FE0AB48006FAE95 /* QuestionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		AB2244ED1FE0AB86006FAE95 /* QuestionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionModel.h; sourceTree = "<group>"; };
@@ -50,6 +49,11 @@
 		AB2244FD1FE0ACBB006FAE95 /* StatsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
 		AB2244FF1FE0ACF5006FAE95 /* StatsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatsModel.h; sourceTree = "<group>"; };
 		AB2245001FE0ACF5006FAE95 /* StatsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatsModel.m; sourceTree = "<group>"; };
+		AB2245141FE2BA24006FAE95 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = Reveal/SWRevealViewController.h; sourceTree = "<group>"; };
+		AB2245151FE2BA24006FAE95 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = Reveal/SWRevealViewController.m; sourceTree = "<group>"; };
+		AB2245171FE32F54006FAE95 /* MenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
+		AB2245181FE32F54006FAE95 /* MenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
+		AB22451D1FE3F46B006FAE95 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +89,8 @@
 				AB2244CA1FE0A88E006FAE95 /* AppDelegate.h */,
 				AB2244CB1FE0A88E006FAE95 /* AppDelegate.m */,
 				AB2244D01FE0A88E006FAE95 /* Main.storyboard */,
-				AB2244E01FE0A8A8006FAE95 /* Reveal */,
+				AB2245101FE2B000006FAE95 /* Reveal */,
 				AB2244E11FE0A8B2006FAE95 /* Question */,
-				AB2244E51FE0A94C006FAE95 /* Helpers */,
 				AB2244E31FE0A92C006FAE95 /* RemoveAds */,
 				AB2244E61FE0A9BE006FAE95 /* About */,
 				AB2244E21FE0A8EC006FAE95 /* Menu */,
@@ -96,17 +99,9 @@
 				AB2244D51FE0A88E006FAE95 /* LaunchScreen.storyboard */,
 				AB2244D81FE0A88E006FAE95 /* Info.plist */,
 				AB2244D91FE0A88E006FAE95 /* main.m */,
+				AB22451D1FE3F46B006FAE95 /* Prefix.pch */,
 			);
 			path = ObjectiveTrainerApp;
-			sourceTree = "<group>";
-		};
-		AB2244E01FE0A8A8006FAE95 /* Reveal */ = {
-			isa = PBXGroup;
-			children = (
-				AB2244E71FE0AAAC006FAE95 /* SWRevealViewController.h */,
-				AB2244E81FE0AAAC006FAE95 /* SWRevealViewController.m */,
-			);
-			path = Reveal;
 			sourceTree = "<group>";
 		};
 		AB2244E11FE0A8B2006FAE95 /* Question */ = {
@@ -125,6 +120,8 @@
 			children = (
 				AB2244F01FE0ABD0006FAE95 /* MenuModel.h */,
 				AB2244F11FE0ABD0006FAE95 /* MenuModel.m */,
+				AB2245171FE32F54006FAE95 /* MenuItem.h */,
+				AB2245181FE32F54006FAE95 /* MenuItem.m */,
 				AB2244F31FE0ABE8006FAE95 /* MenuViewController.h */,
 				AB2244F41FE0ABE8006FAE95 /* MenuViewController.m */,
 			);
@@ -136,6 +133,7 @@
 			children = (
 				AB2244F91FE0AC95006FAE95 /* RemoveAdsViewController.h */,
 				AB2244FA1FE0AC95006FAE95 /* RemoveAdsViewController.m */,
+				AB2244E51FE0A94C006FAE95 /* Helpers */,
 			);
 			path = RemoveAds;
 			sourceTree = "<group>";
@@ -165,6 +163,15 @@
 				AB2244F71FE0AC6F006FAE95 /* AboutViewController.m */,
 			);
 			path = About;
+			sourceTree = "<group>";
+		};
+		AB2245101FE2B000006FAE95 /* Reveal */ = {
+			isa = PBXGroup;
+			children = (
+				AB2245141FE2BA24006FAE95 /* SWRevealViewController.h */,
+				AB2245151FE2BA24006FAE95 /* SWRevealViewController.m */,
+			);
+			name = Reveal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +253,10 @@
 				AB2244EC1FE0AB48006FAE95 /* QuestionViewController.m in Sources */,
 				AB2244FE1FE0ACBB006FAE95 /* StatsViewController.m in Sources */,
 				AB2244F51FE0ABE8006FAE95 /* MenuViewController.m in Sources */,
+				AB2245161FE2BA24006FAE95 /* SWRevealViewController.m in Sources */,
+				AB2245191FE32F54006FAE95 /* MenuItem.m in Sources */,
 				AB2245011FE0ACF5006FAE95 /* StatsModel.m in Sources */,
 				AB2244F21FE0ABD0006FAE95 /* MenuModel.m in Sources */,
-				AB2244E91FE0AAAC006FAE95 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
