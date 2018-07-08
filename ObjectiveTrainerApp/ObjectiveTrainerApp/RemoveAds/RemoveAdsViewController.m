@@ -18,7 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];}
+    //*********   GestureRecognizer  **********
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

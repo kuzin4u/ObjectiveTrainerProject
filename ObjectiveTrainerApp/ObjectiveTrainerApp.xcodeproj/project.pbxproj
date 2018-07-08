@@ -22,6 +22,7 @@
 		AB2245011FE0ACF5006FAE95 /* StatsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2245001FE0ACF5006FAE95 /* StatsModel.m */; };
 		AB2245161FE2BA24006FAE95 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2245151FE2BA24006FAE95 /* SWRevealViewController.m */; };
 		AB2245191FE32F54006FAE95 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2245181FE32F54006FAE95 /* MenuItem.m */; };
+		AB2245201FEA7CA2006FAE95 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = AB22451F1FEA7CA2006FAE95 /* Question.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		AB2245171FE32F54006FAE95 /* MenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
 		AB2245181FE32F54006FAE95 /* MenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
 		AB22451D1FE3F46B006FAE95 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		AB22451E1FEA7CA2006FAE95 /* Question.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		AB22451F1FEA7CA2006FAE95 /* Question.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,7 @@
 				AB2244C81FE0A88E006FAE95 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		AB2244C81FE0A88E006FAE95 /* Products */ = {
 			isa = PBXGroup;
@@ -92,14 +96,13 @@
 				AB2245101FE2B000006FAE95 /* Reveal */,
 				AB2244E11FE0A8B2006FAE95 /* Question */,
 				AB2244E31FE0A92C006FAE95 /* RemoveAds */,
-				AB2244E61FE0A9BE006FAE95 /* About */,
 				AB2244E21FE0A8EC006FAE95 /* Menu */,
 				AB2244E41FE0A93D006FAE95 /* Stats */,
 				AB2244D31FE0A88E006FAE95 /* Assets.xcassets */,
 				AB2244D51FE0A88E006FAE95 /* LaunchScreen.storyboard */,
+				AB22451D1FE3F46B006FAE95 /* Prefix.pch */,
 				AB2244D81FE0A88E006FAE95 /* Info.plist */,
 				AB2244D91FE0A88E006FAE95 /* main.m */,
-				AB22451D1FE3F46B006FAE95 /* Prefix.pch */,
 			);
 			path = ObjectiveTrainerApp;
 			sourceTree = "<group>";
@@ -109,6 +112,8 @@
 			children = (
 				AB2244ED1FE0AB86006FAE95 /* QuestionModel.h */,
 				AB2244EE1FE0AB86006FAE95 /* QuestionModel.m */,
+				AB22451E1FEA7CA2006FAE95 /* Question.h */,
+				AB22451F1FEA7CA2006FAE95 /* Question.m */,
 				AB2244EA1FE0AB48006FAE95 /* QuestionViewController.h */,
 				AB2244EB1FE0AB48006FAE95 /* QuestionViewController.m */,
 			);
@@ -120,10 +125,11 @@
 			children = (
 				AB2244F01FE0ABD0006FAE95 /* MenuModel.h */,
 				AB2244F11FE0ABD0006FAE95 /* MenuModel.m */,
-				AB2245171FE32F54006FAE95 /* MenuItem.h */,
-				AB2245181FE32F54006FAE95 /* MenuItem.m */,
 				AB2244F31FE0ABE8006FAE95 /* MenuViewController.h */,
 				AB2244F41FE0ABE8006FAE95 /* MenuViewController.m */,
+				AB2245171FE32F54006FAE95 /* MenuItem.h */,
+				AB2245181FE32F54006FAE95 /* MenuItem.m */,
+				AB2244E61FE0A9BE006FAE95 /* About */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 		AB2244BF1FE0A88E006FAE95 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Сергей Кузин";
 				TargetAttributes = {
@@ -246,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB2244EF1FE0AB86006FAE95 /* QuestionModel.m in Sources */,
+				AB2245201FEA7CA2006FAE95 /* Question.m in Sources */,
 				AB2244DA1FE0A88E006FAE95 /* main.m in Sources */,
 				AB2244F81FE0AC6F006FAE95 /* AboutViewController.m in Sources */,
 				AB2244FB1FE0AC95006FAE95 /* RemoveAdsViewController.m in Sources */,
@@ -392,8 +400,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UFF6N69M95;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ObjectiveTrainerApp/Prefix.pch;
 				INFOPLIST_FILE = ObjectiveTrainerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Kuzin4U.ObjectiveTrainerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -406,8 +417,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UFF6N69M95;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ObjectiveTrainerApp/Prefix.pch;
 				INFOPLIST_FILE = ObjectiveTrainerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Kuzin4U.ObjectiveTrainerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

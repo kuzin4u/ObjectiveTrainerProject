@@ -38,18 +38,22 @@
 #pragma mark Table View Delegate Method
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    /*  Этот Метод начинает работать после появления QuestionViewController и "сдвига" экрана (по addGestureRecognizer), но ДО ПЕРЕХОДА на MenuViewController, т.е. в процессе  формирования TableView для MenuViewController.  Метод numberOfRowsInSection выполняется первым (по протоколу <UITableViewDataSource>) среди Delegate-методов формирования TableView, "прокручмвается" 3 раза, возвращает menuItems.count (кол-во рядов в таблице) = 6  */
+    NSLog(@"Number of Rows in Menu %li", self.menuItems.count);
     return self.menuItems.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Retrive Cell
+    /* Этот Метод начинает работать сразу после 3-х кратного исполнения метода numberOfRowsInSection, который возвращает число рядов в таблице. Метод cellForRowAtIndexPath формирует таблицу, исполняется 6 раз в соответствии с числом строк в таблицею. По завершении формирования последней, шестой (indexPath.row изменялся от 0 до 5), строки  таблицы идет переход от QuestionViewController на MenuViewController через RevealViewController и отображение MenuViewController  */
     NSString *cellIdentifier =@"MenuItemCell";
     UITableViewCell *menuCell = [tableView dequeueReusableCellWithIdentifier: cellIdentifier];
     // Get Menu Item that it's asking for
     MenuItem *item = self.menuItems[indexPath.row];
     // Set menu item text and icon
     menuCell.textLabel.text = item.menuTitle;
+    NSLog(@"%@ %li %@", indexPath, indexPath.row, menuCell.textLabel.text);
     return menuCell;
 }
 
